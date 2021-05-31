@@ -26,4 +26,4 @@ tripeco:
   notification:
     header: "Tripeco"
 
-production: true
+production: false
