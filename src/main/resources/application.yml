@@ -1,0 +1,29 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@tripeco.qzdps.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+      auto-index-creation: false
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: marketing.tripeco@gmail.com
+    password: tripeco.marketing.2021
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret: bm70PevNsCW7w4t2nQL208g0Rb12k9T7
+  expiration: 86400000
+  prefix: Bearer
+
+tripeco:
+  user-header: Tripeco-User
+  password-regex: ^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^\w\s]).{8,}$
+  notification:
+    header: "Tripeco"
+
+production: true

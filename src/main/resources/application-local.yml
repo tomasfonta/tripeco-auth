@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@tripeco.qzdps.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+server:
+  port: 8081
+
+production: false
+
