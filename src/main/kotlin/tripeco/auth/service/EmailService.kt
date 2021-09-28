@@ -26,7 +26,7 @@ class EmailService(private val mailSender: JavaMailSender,
     @Async
     fun newUser(user: User, password: String) {
         val to = user.email
-        if (production || to.contains(TEST_EMAILS_DOMAIN)) {
+        if ( true ) {
             val ctx = Context()
             ctx.setVariable("user", user)
             ctx.setVariable("password", password)
