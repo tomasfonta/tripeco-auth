@@ -37,7 +37,7 @@ class EmailService(private val mailSender: JavaMailSender,
             helper.setTo(user.email)
             helper.setSubject("Bienvenido to Tripeco!")
             helper.setText(htmlContent, true)
-            mailSender.send(mimeMessage)
+            //mailSender.send(mimeMessage)
         } else {
             logger.warn("Email to $to was not sent because it is not a valid test email")
         }
